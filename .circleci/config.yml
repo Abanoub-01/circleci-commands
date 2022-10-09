@@ -1,6 +1,6 @@
 version: 2.1
  
-command:
+commands:
   print_pipeline_id:
     step:
       - run: echo $CIRCLE_WORKFLOW_ID 
@@ -11,7 +11,7 @@ jobs:
     steps:
       - print_pipeline_id
     
-workflow:
+workflows:
   my_workflow:
     jobs:
       - print_id
