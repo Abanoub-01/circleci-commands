@@ -13,4 +13,5 @@ jobs:
     
 workflow:
   my_workflow:
-    - print_id
+    jobs:
+      - print_id
