@@ -11,4 +11,6 @@ jobs:
     steps:
       - print_pipeline_id
     
-  
+ workflow:
+   my_workflow:
+     - print_id
