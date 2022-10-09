@@ -1,4 +1,14 @@
 version: 2.1
  
- jobs:
+command:
+  print_pipeline_id:
+    step:
+      - run: echo $CIRCLE_WORKFLOW_ID 
+jobs:
+  print_id:
+    docker:
+      - image: "circleci/node:9.6.1"
+    steps:
+      - print_pipeline_id
+    
   
